@@ -35,7 +35,8 @@
         "wpackagist-plugin/svg-support": "^2.5",
         "wpackagist-plugin/automatorwp": "^4.3",
         "wpackagist-plugin/performance-lab": "^2.9",
-        "wpackagist-theme/hello-elementor": "^3.0"
+        "wpackagist-theme/hello-elementor": "^3.0",
+        "wpackagist-plugin/wordpress-seo": "^22.4"
     },
     "config": {
         "allow-plugins": {
