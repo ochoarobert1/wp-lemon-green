@@ -1,4 +1,9 @@
 /docker/mysql/data/
+/source/plugins/elementor/
+/source/plugins/header-footer-elementor/
+/source/plugins/performance-lab/
+/source/plugins/automatorwp/
+/source/plugins/svg-support/
 /source/themes/hello*
 /source/themes/twenty*
 /vendor/
