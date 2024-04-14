@@ -1,0 +1,15 @@
+{
+  "name": "wp-lemon-green",
+  "version": "1.0.0",
+  "description": "Lemon Green Services theme for WordPress",
+  "author": "Robert Ochoa <contacto@robertochoaweb.com>",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.75.0"
+  },
+  "scripts": {
+    "watch": "sass ./source/themes/lemon-green-theme/style.scss:./source/themes/lemon-green-theme/style.css --watch --no-source-map --style=compressed",
+    "develop": "sass ./source/themes/lemon-green-theme/style.scss:./source/themes/lemon-green-theme/style.css --no-source-map",
+    "build": "sass ./source/themes/lemon-green-theme/style.scss:./source/themes/lemon-green-theme/style.css --no-source-map --style=compressed"
+  }
+}
