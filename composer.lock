@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f3614f6a656936a75a11ad25cd8b434a",
+    "content-hash": "4b22db89296d177073fd4db74db9b1fa",
     "packages": [
         {
             "name": "composer/installers",
@@ -260,7 +260,26 @@
             "homepage": "https://wordpress.org/themes/hello-elementor/"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "wpackagist-plugin/query-monitor",
+            "version": "3.15.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/query-monitor/",
+                "reference": "tags/3.15.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.15.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/query-monitor/"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

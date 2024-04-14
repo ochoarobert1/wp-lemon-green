@@ -41,5 +41,8 @@
         "allow-plugins": {
             "composer/installers": true
         }
+    },
+    "require-dev": {
+        "wpackagist-plugin/query-monitor": "^3.15"
     }
 }
