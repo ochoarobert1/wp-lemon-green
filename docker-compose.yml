@@ -1,0 +1,57 @@
+version: "3.9"
+name: lemongreen
+services:
+  web:
+    container_name: lemongreen_wp
+    image: wordpress:latest
+    depends_on:
+      - db
+    ports:
+      - 10113:80
+    env_file:
+      - .env
+    environment:
+      WORDPRESS_DB_HOST: ${WORDPRESS_DB_HOST}
+      WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
+      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
+      WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
+      WORDPRESS_TABLE_PREFIX: ${WORDPRESS_TABLE_PREFIX}
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_DEBUG', ${WORDPRESS_DEBUG} );
+        define('WP_SITEURL', 'http://localhost:10113');
+        define('WP_HOME', 'http://localhost:10113');
+    volumes:
+      - ./source/themes/:/var/www/html/wp-content/themes/
+      - ./source/plugins/:/var/www/html/wp-content/plugins/
+    networks:
+      - lemongreen_network
+  db:
+    container_name: lemongreen_db
+    image: mariadb:latest
+    env_file:
+      - .env
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    networks:
+      - lemongreen_network
+    ports:
+      - 3306:3306
+    volumes:
+      - ./docker/mysql/data/:/var/lib/mysql/
+  adminer:
+    container_name: lemongreen_adm
+    image: adminer
+    depends_on:
+      - db
+    networks:
+      - lemongreen_network
+    ports:
+      - 10114:8080
+    environment:
+      UPLOAD_LIMIT: 999M
+networks:
+  lemongreen_network:
+    driver: bridge

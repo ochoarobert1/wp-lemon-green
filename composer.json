@@ -1,0 +1,13 @@
+{
+    "name": "ochoarobert1/wp-lemon-green",
+    "description": "Lemon Green Services - Composer",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Robert Ochoa",
+            "email": "contacto@robertochoaweb.com"
+        }
+    ],
+    "require": {}
+}
