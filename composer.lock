@@ -171,15 +171,15 @@
         },
         {
             "name": "wpackagist-plugin/elementor",
-            "version": "3.20.4",
+            "version": "3.21.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/elementor/",
-                "reference": "tags/3.20.4"
+                "reference": "tags/3.21.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/elementor.3.20.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/elementor.3.21.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -189,15 +189,15 @@
         },
         {
             "name": "wpackagist-plugin/header-footer-elementor",
-            "version": "1.6.26",
+            "version": "1.6.27",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/header-footer-elementor/",
-                "reference": "tags/1.6.26"
+                "reference": "tags/1.6.27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/header-footer-elementor.1.6.26.zip"
+                "url": "https://downloads.wordpress.org/plugin/header-footer-elementor.1.6.27.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
