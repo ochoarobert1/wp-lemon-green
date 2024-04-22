@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b22db89296d177073fd4db74db9b1fa",
+    "content-hash": "c7ec5c75fe4dbcdd4c994434f37d820e",
     "packages": [
         {
             "name": "composer/installers",
@@ -170,16 +170,34 @@
             "homepage": "https://wordpress.org/plugins/automatorwp/"
         },
         {
-            "name": "wpackagist-plugin/elementor",
-            "version": "3.20.4",
+            "name": "wpackagist-plugin/classic-editor",
+            "version": "1.6.3",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/elementor/",
-                "reference": "tags/3.20.4"
+                "url": "https://plugins.svn.wordpress.org/classic-editor/",
+                "reference": "tags/1.6.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/elementor.3.20.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.6.3.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/classic-editor/"
+        },
+        {
+            "name": "wpackagist-plugin/elementor",
+            "version": "3.21.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/elementor/",
+                "reference": "tags/3.21.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/elementor.3.21.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -189,15 +207,15 @@
         },
         {
             "name": "wpackagist-plugin/header-footer-elementor",
-            "version": "1.6.26",
+            "version": "1.6.27",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/header-footer-elementor/",
-                "reference": "tags/1.6.26"
+                "reference": "tags/1.6.27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/header-footer-elementor.1.6.26.zip"
+                "url": "https://downloads.wordpress.org/plugin/header-footer-elementor.1.6.27.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -240,6 +258,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/svg-support/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "22.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/22.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.22.4.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         },
         {
             "name": "wpackagist-theme/hello-elementor",
