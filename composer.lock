@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "841d059fecc6ea8c4bf6f164cfe523c2",
+    "content-hash": "c7ec5c75fe4dbcdd4c994434f37d820e",
     "packages": [
         {
             "name": "composer/installers",
@@ -168,6 +168,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/automatorwp/"
+        },
+        {
+            "name": "wpackagist-plugin/classic-editor",
+            "version": "1.6.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/classic-editor/",
+                "reference": "tags/1.6.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.6.3.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/classic-editor/"
         },
         {
             "name": "wpackagist-plugin/elementor",
